@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guinchos Brasil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #003d80;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px 20px;
+            background: url('images/hero-background.jpg') no-repeat center;
+            background-size: cover;
+            color: rgb(12, 12, 12);
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .services .service-item {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .services .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #00274d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .titulos {
+            color: yellow;
+        }
+
+        .titulo {
+            color: rgb(69, 207, 69);
+        }
+
+        .destaque {
+            color: rgb(21, 224, 55);
+        }
+
+        .titulo1 {
+            color: yellow;
+        }
+
+        .titulo2 {
+            color: #268cf8;
+        }
+
+        .titulo3 {
+            color: #0cdb4a;
+        }
+
+        .titulo4 {
+            color: yellow;
+        }
+
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 1.5em;
+            }
+
+            .services h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Guinchos <a class="titulo4">Brasil</a> </h1>
+        <p class="titulos">Resgate e assistência 24 horas, em qualquer lugar!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="titulo1" href="#servicos">Serviços</a></li>
+            <li><a class="titulo2" href="#sobre">Sobre Nós</a></li>
+            <li><a class="titulo3" href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" data-aos="fade-in">
+        <h2 class="destaque">Sua solução rápida e confiável em guinchos</h2>
+        <p>Estamos aqui para ajudar em momentos de necessidade.</p>
+    </section>
+
+    <img src="imagem/guincho.jpg" alt="Imagem de guincho" data-aos="fade-up">
+
+    <section class="services" id="servicos">
+        <h3 class="destaque" data-aos="fade-right">Nossos Serviços</h3>
+        <div class="service-item" data-aos="zoom-in">
+            <p><strong>Atendimento 24 horas:</strong> Resgate disponível a qualquer hora do dia.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in">
+            <p><strong>Guincho leve e pesado:</strong> Veículos de todos os tamanhos.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in">
+            <p><strong>Assistência rodoviária:</strong> Suporte para problemas mecânicos e elétricos.</p>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <h3 class="destaque" data-aos="fade-left">Sobre Nós</h3>
+        <p data-aos="fade-up">Com anos de experiência, a Guinchos Brasil é referência em serviços de guincho e assistência rodoviária. Nossa equipe dedicada e equipamentos de ponta garantem um serviço ágil e seguro.</p>
+    </section>
+
+    <section class="contact" id="contato">
+        
+        <h3 class="destaque" data-aos="fade-right">Contato</h3>
+        <p data-aos="fade-up">Endereço: 
+            <a href="https://www.google.com/maps?q=Rua+Nelson+Vernalha,+Jardim+Boa+Vista,+São+Roque,+SP" target="_blank" style="color: blue; text-decoration: underline;">Rua Nelson Vernalha, Jardim Boa Vista, São Roque, SP</a>
+        </p>
+        <p data-aos="fade-up">Telefone: <a href="tel:+5511999999999">(11) 91360-4238</a></p>
+        <p data-aos="fade-up">Email: <a href="mailto:contato@guinchosbrasil.com">contato@guinchosbrasil.com</a></p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Guinchos Brasil - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
